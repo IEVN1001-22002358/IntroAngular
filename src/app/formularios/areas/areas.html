@@ -1,0 +1,75 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="col-md-6">
+  <div class="form-check">
+    <input type="radio" name="figura" value="circulo" [(ngModel)]="figura">
+    <label class="form-check-label">Circulo</label>
+  </div>
+  <div class="form-check">
+    <input type="radio" name="figura" value="rectangulo" [(ngModel)]="figura">
+    <label class="form-check-label">Rectangulo</label>
+  </div>
+  <div class="form-check">
+    <input type="radio" name="figura" value="triangulo" [(ngModel)]="figura">
+    <label class="form-check-label">Triángulo</label>
+  </div>
+  <div class="form-check">
+    <input type="radio" name="figura" value="pentagono" [(ngModel)]="figura">
+    <label class="form-check-label">Pentágono</label>
+  </div>
+
+  <div *ngIf="figura === 'circulo'" class="grupo-datos">
+    <div class="mb-3">
+      <label class="form-label">Ingresa el radio del círculo:</label>
+      <input type="number" class="form-control" min="0" [(ngModel)]="radio">
+    </div>
+  </div>
+
+  <div *ngIf="figura === 'rectangulo'" class="grupo-datos">
+    <div class="mb-3">
+      <label class="form-label">Ingresa la Base:</label>
+      <input type="number" class="form-control" [(ngModel)]="base">
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Ingresa la altura:</label>
+      <input type="number" class="form-control" [(ngModel)]="altura">
+    </div>
+  </div>
+
+  <div *ngIf="figura === 'triangulo'" class="grupo-datos">
+    <div class="mb-3">
+      <label class="form-label">Ingresa la base:</label>
+      <input type="number" class="form-control" [(ngModel)]="base">
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Ingresa la altura:</label>
+      <input type="number" class="form-control" [(ngModel)]="altura">
+    </div>
+  </div>
+
+  <div *ngIf="figura === 'pentagono'" class="grupo-entradas">
+    <div class="mb-3">
+      <label class="form-label">Ingresa el lado:</label>
+      <input type="number" class="form-control" [(ngModel)]="lado">
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Ingresa el apotema:</label>
+      <input type="number" class="form-control" [(ngModel)]="apotema">
+    </div>
+  </div>
+
+  <button (click)="calcular()" class="btn btn-primary mt-2">Calcular</button>
+  
+  <div class="mt-3">
+    <label class="form-label">Resultado:</label>
+    <input type="text" class="form-control" [value]="resultado">
+  </div>
+</div>
+</body>
+</html> -->

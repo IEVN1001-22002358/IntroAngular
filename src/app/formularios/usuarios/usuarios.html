@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-5">
+        <div class="card-body text-center p-4">
+          <h4 class="mb-4">Iniciar sesión</h4>
+          <div class="mb-3">
+            <label class="col-sm-4 col-form-label">Usuario:</label>
+            <div class="col-sm-8">
+              <input type="text" class="form-control border-dark" [(ngModel)]="usuarioIngresado">
+            </div>
+          </div>
+          <div class="mb-4 row text-start">
+            <label class="col-sm-4 col-form-label">Contraseña:</label>
+            <div class="col-sm-8">
+              <input type="password" class="form-control border-dark" [(ngModel)]="passwordIngresado">
+            </div>
+          </div>
+
+          <button (click)="validarAcceso()" class="btn btn-outline-dark px-4 mb-4">
+            [ Iniciar sesión ]
+          </button>
+
+          <div class="text-start" style="min-height: 25px;">
+            <p class="mb-0 fs-5">{{ mensajeResultado }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
